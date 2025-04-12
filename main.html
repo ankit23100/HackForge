@@ -1,70 +1,948 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SettleEase - Conflict Resolution Experts</title>
-        <link rel="stylesheet" href="Style.css">
-    </head>
-    <body>
-        <header id="header">
-            <div class="container">
-                <nav>
-                    <div class=" logo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SettleEase - Conflict Resolution</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-handshake"></i>
+                    <span>SettleEase</span>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#mediators">Mediators</a></li>
+                    <li><a href="#payment-plan">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" id="loginBtn">Login</a></li>
+                    <li><a href="#" id="registerBtn">Register</a></li>
+                    <li id="userDropdown" style="display: none;">
+                        <a href="#" id="userName"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="profileLink">Profile</a></li>
+                            <li><a href="#" id="logoutLink">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home">
+        <div class="container">
+            <div class="hero-content animate">
+                <h1>Resolving Conflicts</h1>
+                <p>Professional mediation services to help you find peaceful solutions to disputes faster and more effectively than ever before.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Get Started</a>
+                    <a href="#services" class="btn btn-outline">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text animate">
+                    <h2>About SettleEase</h2>
+                    <p>At SettleEase, we believe that legal conflicts shouldn't always lead to long, expensive, and stressful court battles. Our law firm startup is revolutionizing the legal landscape by offering alternative dispute resolution (ADR) methods such as arbitration, mediation, and conciliation to resolve disputes efficiently and amicably.</p>
+                    <p>We cater to B2B, B2C, and C2C segments, ensuring that businesses, individuals, and communities can settle their conflicts without stepping into a courtroom. Our team of seasoned lawyers, legal advisors, arbitrators, mediators, and counsellors works closely with clients to find practical, legally sound, and cost-effective solutions.</p>
+                    <a href="#contact" class="btn">Learn More</a>
+                </div>
+                <div class="about-image animate">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Mediation session">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We offer comprehensive conflict resolution services.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate" data-service="workplace">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Workplace Mediation</h3>
+                    <p>Resolution of conflicts between employees, managers, or teams with professional analysis.</p>
+                </div>
+                <div class="service-card animate" data-service="family">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Family Dispute Resolution</h3>
+                    <p>Navigation of sensitive family conflicts with expert guidance.</p>
+                </div>
+                <div class="service-card animate" data-service="community">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Mediation</h3>
+                    <p>Professional approaches to neighborhood disputes and landlord-tenant conflicts.</p>
+                </div>
+                <div class="service-card animate" data-service="legal">
+                    <div class="service-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Legal Conflict Resolution</h3>
+                    <p>Analysis of legal disputes to predict optimal resolution paths.</p>
+                </div>
+                <div class="service-card animate" data-service="cultural">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Cross-Cultural Mediation</h3>
+                    <p>Cultural context analysis to resolve conflicts arising from misunderstandings.</p>
+                </div>
+                <div class="service-card animate" data-service="coaching">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Conflict Coaching</h3>
+                    <p>Personalized coaching to develop conflict resolution skills.</p>
+                </div>
+            </div>
+            <div class="other-services-btn-container" style="text-align: center; margin-top: 20px;">
+                <button id="otherServicesBtn" class="btn btn-outline" style="padding: 10px 20px; font-size: 0.9rem;">
+                  <i class="fas fa-plus-circle"></i> Other Services
+                </button>
+              </div>
+        </div>
+    </section>
+   
+</section>
+<section id="mediators">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Mediators</h2>
+            <p>Meet our team of experienced mediators.</p>
+        </div>
+        <div class="mediators-grid">
+            <div class="mediator-card animate">
+                <img src="m1.jpeg" alt="Mediator 1">
+                <h3>Aarti Ramaswami</h3>
+                <p>Workplace mediator with 15 years experience and PhD in Organizational Psychology.</p>
+            </div>
+            <div class="mediator-card animate">
+                <img src="m2.jpg" alt="Mediator 2">
+                <h3>Monima Khan</h3>
+                <p>Family dispute specialist.</p>
+            </div>
+            <div class="mediator-card animate">
+                <img src="m3.jpg" alt="Mediator 3">
+                <h3>Sriram Panchu</h3>
+                <p>Legal mediator and case precedent analysis expertise.</p>
+            </div>
+        </div>
+    </div> 
+</section>
+    <section id="contact">
+        <div class="container">
+            <div class="contact-info animate">
+                <h2>Get In Touch</h2>
+                <p>Our team will review your inquiry and route it to the most appropriate mediator based on your specific needs.</p>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="organization">Organization</label>
+                        <input type="text" id="organization">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="query">Query Type</label>
+                        <select id="query" required>
+                            <option value="">Select a query</option>
+                            <option value="case">I have a case</option>
+                            <option value="careers">Careers at SettleEase</option>
+                            <option value="ongoing">Ongoing dispute</option>
+                            <option value="other">Other query</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="payment-plan">
+        <div class="container">
+            <div class="section-title">
+                <h2>Flexible Payment Plans</h2>
+                <p>Choose a plan that suits your needs and budget.</p>
+            </div>
+            <div class="payment-grid">
+                <div class="payment-option animate">
+                    <h3>Case Lodging Fees</h3>
+                    <p>One-time charges for initiating dispute resolution processes.</p>
+                    <p><span style="font-size: 2rem; font-weight: 600;">₹1999</span></p>
+                    <button class="btn">Select Plan</button>
+                </div>
+                <div class="payment-option animate">
+                    <h3>Subscription Plans</h3>
+                    <p>Businesses and individuals can subscribe for ongoing legal support and dispute resolution services.</p>
+                    <p><span style="font-size: 2rem; font-weight: 600;">₹3999</span></p>
+                    <button class="btn">Select Plan</button>
+                </div>
+                <div class="payment-option animate">
+                    <h3>Commission-Based Model</h3>
+                    <p>A percentage-based fee on successful settlements and arbitration cases.</p>
+                    <p><span style="font-size: 2rem; font-weight: 600;">11%</span></p>
+                    <button class="btn">Select Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
                         <i class="fas fa-handshake"></i>
                         <span>SettleEase</span>
                     </div>
-                    <div class="menu-toggle">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                    <ul class="nav-links">
+                    <p>Conflict resolution services to help individuals and organizations find peaceful solutions to disputes.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="#" id="loginBtn">Login</a></li>
-                        <li><a href="#" id="registerBtn">Register</a></li>
-                        <li id="userDropdown" style="display: none;">
-                            <a href="#" id="username"></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#" id="profileLink">Profile</a></li>
-                                <li><a href="#" id="logoutLink">Logout</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="#">Privacy Policy</a></li>
                     </ul>
-                </nav>
-            </div>
-        </header>
-
-        <section id="home">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Resolving Conflicts With Ease</h1>
-                    <p>Professional mediation services to help you find peaceful solutions to disputes and disagreements.</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn">Get Started</a>
-                        <a href="#services" class="btn btn-outline">Our Services</a>
-                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Workplace Mediation</a></li>
+                        <li><a href="#">Family Dispute Resolution</a></li>
+                        <li><a href="#">Community Mediation</a></li>
+                        <li><a href="#">Legal Conflict Resolution</a></li>
+                        <li><a href="#">Conflict Coaching</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for tips and updates.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email address" required>
+                        </div>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
                 </div>
             </div>
-        </section>
-
-        <section id="about">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>About SettleEase</h2>
-                        <p>At SettleEase, we believe that every conflict presents an opportunity for growth and understanding. Our team of certified mediators brings decades of experience in conflict resolution across various sectors.</p>
-                        <p>We specialize in creating safe spaces for dialogue, fostering mutual understanding, and guiding parties toward mutually beneficial solutions. Our approach is rooted in empathy, neutrality, and practical problem-solving.</p>
-                        <p>Whether you're dealing with workplace disputes, family conflicts, or community disagreements, we're here to help you navigate through challenging situations with dignity and respect.</p>
-                        <a href="#contact" class="btn">Learn More</a>
-                    </div>
-                    <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Mediation session">
-                    </div>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SettleEase. All Rights Reserved.<p>Ankit Shah </p></p>
             </div>
-        </section>
+        </div>
+    </footer>
+    <div id="serviceDetailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="serviceModalTitle">Service Details</h2>
+            <div id="serviceDescription">
+            </div>
+            <form id="serviceCaseForm">
+                <div class="form-group">
+                    <label for="caseDetails">Describe your case</label>
+                    <textarea id="caseDetails" required placeholder="Please describe your conflict situation in detail..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="scName">Your Name</label>
+                    <input type="text" id="scName" required>
+                </div>
+                <div class="form-group">
+                    <label for="scEmail">Email</label>
+                    <input type="email" id="scEmail" required>
+                </div>
+                <button type="submit" class="btn">
+                    <span id="submitText">Get Professional Analysis</span>
+                    <span id="submitSpinner" class="spinner" style="display: none;"></span>
+                </button>
+            </form>
+            <div id="serviceResponse" style="display: none;"></div>
+        </div>
+    </div>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p style="text-align: center; margin-top: 15px;">Don't have an account? <a href="#" id="switchToRegister">Register</a></p>
+            </form>
+        </div>
+    </div>
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create an Account</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Confirm Password</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <p style="text-align: center; margin-top: 15px;">Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Your Profile</h2>
+            <div id="profileInfo">
+            </div>
+        </div>
+    </div>
+    <div id="otherServicesModal" class="modal" style="display: none;">
+        <div class="modal-content" style="max-width: 500px;">
+            <span class="close-modal">&times;</span>
+            <h3 style="margin-bottom: 15px;">Describe Your Specific Need</h3>
+            <form id="otherServicesForm">
+                <div class="form-group">
+                    <label for="scName">Your Name</label>
+                    <input type="text" id="scName" required>
+                </div>
+                <div class="form-group">
+                    <label for="scEmail">Email</label>
+                    <input type="email" id="scEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="otherServiceText">Describe Your Situation</label>
+                    <textarea id="otherServiceText" placeholder="Briefly describe your situation..." required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">
+                    <span id="submitText">Submit Request</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div id="toast" class="toast"></div>
+    <script>
+        // Data Storage
+        let settleBaseData = JSON.parse(localStorage.getItem('settleBaseData')) || {
+            users: [
+                {
+                    name: "Demo User",
+                    email: "demo@settleease.com",
+                    password: "demo123",
+                    joinDate: new Date().toISOString(),
+                    lastLogin: new Date().toISOString(),
+                    cases: []
+                }
+            ],
+            contactSubmissions: [],
+            newsletterSubscriptions: [],
+            paymentPlans: [],
+            serviceInquiries: []
+        };
+
+        // Service Details
+        const serviceDetails = {
+            workplace: {
+                title: "Workplace Mediation",
+                description: "Our professional mediators help resolve conflicts between employees, managers, or teams. Our system analyzes communication patterns to identify root causes and suggest resolution strategies.",
+                features: [
+                    "Professional analysis of disputes",
+                    "Conflict pattern recognition",   
+                    "Follow-up support with progress tracking"
+                ]
+            },
+            family: {
+                title: "Family Dispute Resolution",
+                description: "Our team helps navigate sensitive family conflicts by analyzing emotional tones and relationship dynamics. We provide mediators with insights into underlying issues and suggest communication strategies.",
+                features: [
+                    "Expert emotional tone evaluation",
+                    "Family relationship mapping",
+                    "Suggested communication strategies",
+                    "Legal guidance referrals when needed"
+                ]
+            },
+            community: {
+                title: "Community Mediation",
+                description: "Our platform helps mediators understand community dispute patterns and suggest community-specific resolution approaches.",
+                features: [
+                    "Community conflict pattern analysis",
+                    "Historical dispute resolution database",
+                    "Cultural context evaluation",
+                    "Neighborhood-specific mediation strategies"
+                ]
+            },
+            legal: {
+                title: "Legal Conflict Resolution",
+                description: "We analyze legal disputes by comparing them to similar cases, predicting likely outcomes and suggesting optimal resolution paths to avoid lengthy court proceedings.",
+                features: [
+                    "Legal precedent analysis",
+                    "Outcome prediction modeling",
+                    "Cost-benefit analysis of resolution options",
+                    "Document analysis for key clauses"
+                ]
+            },
+            cultural: {
+                title: "Cross-Cultural Mediation",
+                description: "Our mediators help identify cultural misunderstandings and suggest culturally appropriate communication strategies to bridge gaps between parties from different backgrounds.",
+                features: [
+                    "Cultural context analysis",
+                    "Communication style evaluation",
+                    "Bias detection in language",
+                    "Cultural norm explanations"
+                ]
+            },
+            coaching: {
+                title: "Personalized Conflict Coaching",
+                description: "We create personalized coaching plans based on your specific conflict patterns and communication style, helping you develop skills to manage and resolve conflicts effectively.",
+                features: [
+                    "Personalized skill assessment",
+                    "Custom coaching plan",
+                    "Progress tracking",
+                    "Simulated conflict scenarios"
+                ]
+            }
+        };
+
+        // DOM Elements
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navUl = document.querySelector('.nav-links');
+        const header = document.getElementById('header');
+        const loginBtn = document.getElementById('loginBtn');
+        const registerBtn = document.getElementById('registerBtn');
+        const logoutLink = document.getElementById('logoutLink');
+        const profileLink = document.getElementById('profileLink');
+        const userDropdown = document.getElementById('userDropdown');
+        const userName = document.getElementById('userName');
+        const loginModal = document.getElementById('loginModal');
+        const registerModal = document.getElementById('registerModal');
+        const profileModal = document.getElementById('profileModal');
+        const closeModalButtons = document.querySelectorAll('.close-modal');
+        const switchToRegister = document.getElementById('switchToRegister');
+        const switchToLogin = document.getElementById('switchToLogin');
+        const toast = document.getElementById('toast');
+        const otherServicesModal = document.getElementById('otherServicesModal');
+        const otherServicesBtn = document.getElementById('otherServicesBtn');
+        const otherServicesForm = document.getElementById('otherServicesForm');
         
-    </body>
+        let currentUser = null;
+
+        // Initialize the page
+        window.addEventListener('DOMContentLoaded', () => {
+            // Check for logged in user
+            const loggedInUserEmail = localStorage.getItem('loggedInUser');
+            if (loggedInUserEmail) {
+                currentUser = settleBaseData.users.find(user => user.email === loggedInUserEmail);
+            }
+            
+            updateUserUI();
+            animateOnScroll();
+        });
+
+        // Mobile menu toggle
+        menuToggle.addEventListener('click', () => {
+            navUl.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links li a').forEach(link => {
+            link.addEventListener('click', () => {
+                navUl.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            animateOnScroll();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate');
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Initialize all animate elements
+        document.querySelectorAll('.animate').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'all 0.6s ease';
+        });
+
+        // Modal functions
+        function openModal(modal) {
+            modal.style.display = 'flex';
+            setTimeout(() => {
+                modal.classList.add('active');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modal) {
+            modal.classList.remove('active');
+            setTimeout(() => {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+        // Show toast notification
+        function showToast(message, type = 'success') {
+            toast.textContent = message;
+            toast.style.backgroundColor = type === 'success' ? '#2ecc71' : '#e74c3c';
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // Update user interface based on login state
+        function updateUserUI() {
+            if (currentUser) {
+                loginBtn.style.display = 'none';
+                registerBtn.style.display = 'none';
+                userDropdown.style.display = 'block';
+                userName.textContent = currentUser.name.split(' ')[0]; // First name only
+                localStorage.setItem('loggedInUser', currentUser.email);
+            } else {
+                loginBtn.style.display = 'block';
+                registerBtn.style.display = 'block';
+                userDropdown.style.display = 'none';
+                localStorage.removeItem('loggedInUser');
+            }
+        }
+
+        // Login button click
+        loginBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal(loginModal);
+        });
+
+        // Register button click
+        registerBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal(registerModal);
+        });
+
+        // Profile link click
+        profileLink?.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal(profileModal);
+            
+            if (currentUser) {
+                document.getElementById('profileInfo').innerHTML = `
+                    <div class="form-group">
+                        <label>Name:</label>
+                        <p>${currentUser.name}</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <p>${currentUser.email}</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Member Since:</label>
+                        <p>${new Date(currentUser.joinDate).toLocaleDateString()}</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Cases Submitted:</label>
+                        <p>${currentUser.cases.length}</p>
+                    </div>
+                `;
+            }
+        });
+
+        // Close modal buttons
+        closeModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modal = button.closest('.modal');
+                closeModal(modal);
+            });
+        });
+
+        // Switch to register form
+        switchToRegister?.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeModal(loginModal);
+            openModal(registerModal);
+        });
+
+        // Switch to login form
+        switchToLogin?.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeModal(registerModal);
+            openModal(loginModal);
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal')) {
+                closeModal(e.target);
+            }
+        });
+
+        // Login form submission
+        document.getElementById('loginForm')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            
+            const user = settleBaseData.users.find(u => u.email === email && u.password === password);
+            
+            if (user) {
+                currentUser = user;
+                currentUser.lastLogin = new Date().toISOString();
+                updateUserUI();
+                closeModal(loginModal);
+                showToast('Login successful!', 'success');
+                loginForm.reset();
+            } else {
+                showToast('Invalid email or password', 'error');
+            }
+        });
+
+        // Register form submission
+        document.getElementById('registerForm')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('registerName').value;
+            const email = document.getElementById('registerEmail').value;
+            const password = document.getElementById('registerPassword').value;
+            const confirmPassword = document.getElementById('registerConfirmPassword').value;
+            
+            // Validation
+            if (password !== confirmPassword) {
+                showToast('Passwords do not match!', 'error');
+                return;
+            }
+            
+            if (settleBaseData.users.some(u => u.email === email)) {
+                showToast('User already exists with this email!', 'error');
+                return;
+            }
+            
+            // Create new user
+            currentUser = {
+                name,
+                email,
+                password,
+                joinDate: new Date().toISOString(),
+                lastLogin: new Date().toISOString(),
+                cases: []
+            };
+            
+            settleBaseData.users.push(currentUser);
+            localStorage.setItem('settleBaseData', JSON.stringify(settleBaseData));
+            updateUserUI();
+            closeModal(registerModal);
+            showToast('Registration successful! You are now logged in.', 'success');
+            registerForm.reset();
+        });
+
+        // Logout
+        logoutLink?.addEventListener('click', (e) => {
+            e.preventDefault();
+            currentUser = null;
+            updateUserUI();
+            closeModal(profileModal);
+            showToast('You have been logged out.', 'success');
+        });
+
+        // Service card clicks
+        document.querySelectorAll('.service-card[data-service]').forEach(card => {
+            card.addEventListener('click', function() {
+                const serviceKey = this.getAttribute('data-service');
+                const service = serviceDetails[serviceKey];
+                
+                document.getElementById('serviceModalTitle').textContent = service.title;
+                
+                let featuresHTML = service.features.map(f => 
+                    `<li><i class="fas fa-check-circle"></i> ${f}</li>`
+                ).join('');
+                
+                document.getElementById('serviceDescription').innerHTML = `
+                    <p>${service.description}</p>
+                    <div class="service-features">
+                        <h4>Features Included:</h4>
+                        <ul>${featuresHTML}</ul>
+                    </div>
+                `;
+                
+                document.getElementById('serviceCaseForm').reset();
+                document.getElementById('serviceResponse').style.display = 'none';
+                
+                if (currentUser) {
+                    document.getElementById('scName').value = currentUser.name;
+                    document.getElementById('scEmail').value = currentUser.email;
+                }
+                
+                document.getElementById('serviceCaseForm').dataset.service = serviceKey;
+                openModal(serviceDetailModal);
+            });
+        });
+
+        // Service case form submission
+        document.getElementById('serviceCaseForm').addEventListener('submit', function(e) {
+            e.preventDefault();             
+            const serviceKey = this.dataset.service;
+            const service = serviceDetails[serviceKey];
+            const caseDetails = document.getElementById('caseDetails').value;
+            const name = document.getElementById('scName').value;
+            const email = document.getElementById('scEmail').value;
+            
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            const submitText = document.getElementById('submitText');
+            const submitSpinner = document.getElementById('submitSpinner');
+            
+            submitText.textContent = 'Analyzing...';
+            submitSpinner.style.display = 'inline-block';
+            submitBtn.disabled = true;
+            
+            const inquiry = {
+                serviceType: service.title,
+                caseDetails,
+                name,
+                email,
+                date: new Date().toISOString(),
+                userId: currentUser?.email || null
+            };
+            
+            if (currentUser) {
+                currentUser.cases.push(inquiry);
+            }
+            
+            settleBaseData.serviceInquiries.push(inquiry);
+            localStorage.setItem('settleBaseData', JSON.stringify(settleBaseData));
+            
+            // Simulate analysis delay
+            setTimeout(() => {
+                const response = generateServiceResponse(service, caseDetails, name);
+                
+                document.getElementById('serviceResponse').innerHTML = `
+                    <h4>Professional Analysis</h4>
+                    <p>${response}</p>
+                    <div style="margin-top: 20px; background: #f0f4ff; padding: 15px; border-radius: 5px;">
+                        <h5>Recommended Next Steps</h5>
+                        <ol>
+                            <li>Schedule a consultation with one of our mediators</li>
+                            <li>Review our conflict resolution resources</li>
+                            <li>We'll contact you at ${email} within 24 hours</li>
+                        </ol>
+                    </div>
+                `;
+                
+                document.getElementById('serviceResponse').style.display = 'block';
+                submitText.textContent = 'Get Professional Analysis';
+                submitSpinner.style.display = 'none';
+                submitBtn.disabled = false;
+                
+                document.getElementById('serviceResponse').scrollIntoView({ behavior: 'smooth' });
+            }, 2000);
+        });
+
+        // Generate service response
+        function generateServiceResponse(service, caseDetails, name) {
+            const approaches = [
+                'facilitated discussion', 
+                'shuttle diplomacy', 
+                'conflict coaching', 
+                'restorative justice', 
+                'transformative mediation'
+            ];
+            
+            const recommendedApproach = approaches[Math.floor(Math.random() * approaches.length)];
+            
+            return `
+                <p>Thank you, ${name.split(' ')[0]}. Our team has reviewed your ${service.title.toLowerCase()} case.</p>
+                <p>Based on our professional assessment of similar cases, we recommend a ${recommendedApproach} approach.</p>
+                <p>One of our mediators will contact you shortly to discuss next steps.</p>
+            `;
+        }
+
+        // Contact form submission
+        document.getElementById('contactForm')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const submission = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                organization: document.getElementById('organization').value,
+                phone: document.getElementById('phone').value,
+                query: document.getElementById('query').value,
+                message: document.getElementById('message').value,
+                timestamp: new Date().toISOString(),
+                userId: currentUser?.email || null
+            };
+            
+            settleBaseData.contactSubmissions.push(submission);
+            localStorage.setItem('settleBaseData', JSON.stringify(settleBaseData));
+            
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner"></span> Sending...';
+            
+            setTimeout(() => {
+                showToast('Message sent successfully! Our team will contact you soon.', 'success');
+                e.target.reset();
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+            }, 1500);
+        });
+
+        // Newsletter form submission
+        document.getElementById('newsletterForm')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = e.target.querySelector('input').value;
+            
+            settleBaseData.newsletterSubscriptions.push({
+                email,
+                date: new Date().toISOString(),
+                userId: currentUser?.email || null
+            });
+            
+            localStorage.setItem('settleBaseData', JSON.stringify(settleBaseData));
+            
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner"></span> Subscribing...';
+            
+            setTimeout(() => {
+                showToast(`Thank you for subscribing with ${email}!`, 'success');
+                e.target.reset();
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Subscribe';
+            }, 1500);
+        });
+
+        // Payment plan selection
+        document.querySelectorAll('.payment-option .btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const planElement = e.target.closest('.payment-option');
+                const plan = {
+                    name: planElement.querySelector('h3').textContent,
+                    price: planElement.querySelector('p:nth-of-type(2)').textContent,
+                    date: new Date().toISOString(),
+                    userId: currentUser?.email || null
+                };
+                
+                settleBaseData.paymentPlans.push(plan);
+                localStorage.setItem('settleBaseData', JSON.stringify(settleBaseData));
+                showToast(`You've selected the ${plan.name} for ${plan.price}. This is a demo - no payment processed.`, 'success');
+            });
+        });
+
+        // Other services button
+        otherServicesBtn?.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal(otherServicesModal);
+        });
+
+        // Other services form submission
+        otherServicesForm?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const description = document.getElementById('otherServiceText').value;
+            const name = document.getElementById('scName').value;
+            const email = document.getElementById('scEmail').value;
+            
+            const inquiry = {
+                serviceType: "Other Services",
+                description,
+                name,
+                email,
+                date: new Date().toISOString(),
+                userId: currentUser?.email || null
+            };
+            
+            if (currentUser) {
+                currentUser.cases.push(inquiry);
+            }
+            
+            settleBaseData.serviceInquiries.push(inquiry);
+            localStorage.setItem('settleBaseData', JSON.stringify(settleBaseData));
+            
+            showToast('Your request has been submitted! We\'ll contact you soon.', 'success');
+            closeModal(otherServicesModal);
+            otherServicesForm.reset();
+        });
+    </script>
+</body>
 </html>
